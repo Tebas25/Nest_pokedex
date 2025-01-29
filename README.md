@@ -4,19 +4,32 @@
 
 # Ejecutar en dessarrollo
 1. Ejecutar el repositorio
+
 2. Ejecutar
 ```
 yarn install 
 ```
+
 3. Tener Nest CLI instalado
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Levantar la base de datps
 ```
 docker-composer up -d
 ``` 
-5. Recargar la base de datos con la semilla
+
+5. Clonar el archivo __.env.templat__ y renombrara la copia a __.env__
+
+6. Llenar las variables de entorno definidas en el __.env__
+
+7. Ejecutar la aplicación en dev
+```
+yarn star:dev
+```
+
+8. Recargar la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
